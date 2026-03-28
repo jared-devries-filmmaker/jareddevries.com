@@ -371,3 +371,103 @@ h2 {
     z-index: 9999;
     user-select: none;
 }
+
+/* MOBILE STYLES */
+
+@media (max-width: 768px) {
+
+  body {
+    margin: 20px;
+  }
+
+  /* Header */
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-name {
+    font-size: 48px;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    font-size: 20px;
+    margin-left: 0;
+    margin-right: 15px;
+  }
+
+  /* Hero */
+  .hero {
+    margin-left: -20px;
+    margin-right: -20px;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .hero h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  /* About section */
+  .about {
+    flex-direction: column;
+  }
+
+  .about img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    font-size: 16px;
+  }
+
+  /* Poster grid */
+  .poster-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .poster-grid img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Resume preview */
+  .resume-preview img {
+    width: 100%;
+  }
+
+  /* Camera section */
+  .camera-section {
+    flex-direction: column;
+    margin-right: 0;
+    gap: 20px;
+  }
+
+  #skills ul {
+    margin: 0;
+  }
+
+  /* Video */
+  .video-wrapper {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  /* Contact */
+  .contact-links {
+    margin-left: 0;
+  }
+}
